@@ -1,0 +1,32 @@
+body{width:100%;text-align:center;margin-top:1em;}
+*{font-size:2em;}
+.jump {
+  display: inline-block;
+  animation-duration: 1.5s;
+  animation-name: jump;
+  animation-iteration-count: infinite;
+}
+.jump.alt {
+  animation-delay: .75s;
+}
+@keyframes jump {
+  0%, 100% {
+    transform: scale(1.1,1) translateY(0);
+  }
+  
+  5% {
+    transform: scale(1,1) translateY(-.4em);
+  }
+
+  15% {
+    transform: scale(1.1,.9) translateY(-.5em);
+  }
+  
+  25% {
+    transform: scale(1,1) translateY(-.4em);
+  }
+  
+  30% {
+    transform: scale(1,1) translateY(0);
+  }
+}
